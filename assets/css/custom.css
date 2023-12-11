@@ -1,0 +1,41 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-container {
+    position: relative;
+  }
+  
+.search-container i.fa-solid.fa-magnifying-glass {
+position: absolute;
+top: 27%;
+right: 10px;
+transform: translateY(-37%);
+transform: translateX(776%);
+width: 20px;
+height: 20px;
+background-image: url(https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid);
+background-size: cover;
+pointer-events: none; /* Đảm bảo biểu tượng không che phủ ô input */
+}
+
+#inputSearch {
+padding-right: 30px; /* Đảm bảo không che phủ biểu tượng */
+}
+
+#inputSearch {
+    width: 170%; /* Ô input chiếm toàn bộ chiều rộng của container */
+  }

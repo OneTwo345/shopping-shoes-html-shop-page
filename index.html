@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shoes store</title>
+<meta charset="UTF-8" />
+<script src="/assets/js/jquery/jquery.js"></script>
+<script src="/assets/js/jquery/jquery-3.6.0.min.js"></script>
+<script src="/assets/bootstrap/v5.3.2/js/bootstrap.bundle.min.js"></script>
+<link
+rel="stylesheet"
+href="/assets/bootstrap/v5.3.2/css/bootstrap.min.css"
+/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<link href="/assets/css/custom.css" rel="stylesheet" />
+</head>
+<body>
+<div id="root">
+    <div class="Toastify"></div>
+    <div class="container d-flex algin-item-center border-bottom py-2 mt2">
+    <div class="d-flex align-items-center" style="min-width: 180px">
+        <button class="icon-button">
+        <i class="fa-solid fa-cart-plus fa-xl"></i>
+        Shoe-Ecommerce
+        </button>
+    </div>
+    <div class="d-flex flex-grow-1 justify-content-between">
+        <form class="d-flex align-items-center" id="searchForm">
+            <div class="search-container">
+                <input
+                    type="search"
+                    id="inputSearch"
+                    placeholder="Enter your search shoes"
+                />
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+        </form>
+        <div class="d-flex" style="padding-top: 10px; padding-left: 50px">
+            <button class="icon-button">
+            <i
+                class="fa-solid fa-cart-shopping fa-lg"
+                style="padding-right: 10px"
+            ></i>
+            </button>
+            <button class="icon-button">
+            <i class="fa-solid fa-user fa-lg" style="color: blue;"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+    <div class="container d-flex">
+    <div style="min-width: 180px">
+        <div class="d-flex flex-column border-end me-1 h-100">
+        <div class="py-2 d-flex flex-column justify-content-center">
+            <h5>Category</h5>
+            <div class="form-group" id="categoryContent">
+            <div class="form-check py-1">
+                <input
+                type="radio"
+                class="form-check-input"
+                name="category"
+                id="cat_0"
+                value="allCategory"
+                checked
+                />
+                <label
+                for="cat_0"
+                role="button"
+                class="form-check-label text-decoration-underline fw-bolder"
+                value="All"
+                >
+                All Category
+                </label>
+            </div>
+            </div>
+        </div>
+
+        <div class="py-2 d-flex flex-column justify-content-center">
+            <h5>Price</h5>
+            <div class="form-group" id="priceContent">
+            <div class="form-check py-1">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="price"
+                id="price_0"
+                value="0,0"
+                checked
+                />
+                <label
+                role="button"
+                for="price_0"
+                class="form-check-label text-decoration-underline fw-bolder"
+                >
+                All Price
+                </label>
+            </div>
+            </div>
+        </div>
+        <div class="py-2 d-flex flex-column justify-content-center">
+            <h5>Colors</h5>
+            <div class="form-group" id="colorContent">
+            <div class="form-check py-1">
+                <input
+                class="form-check-input"
+                type="radio"
+                name="color"
+                id="color_0"
+                value="allColor"
+                checked
+                style="
+                    background-image: linear-gradient(to right, red, green);
+                "
+                />
+                <label
+                role="button"
+                for="color_0"
+                class="form-check-label text-decoration-underline fw-bolder"
+                >All Color</label
+                >
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="flex-grow-1">
+        <div class="py-2 d-flex flex-column justify-content-center">
+        <h5>Recommended</h5>
+        <div class="form-group" id="companyContent">
+            <button
+            class="btn btn-sm btn-outline-secondary me-1 active"
+            type="button"
+            id="cpn_0"
+            value="allCompany"
+            checked
+            >
+            All Products
+            </button>
+        </div>
+        <div class="py-2 d-flex flex-column justify-content-center">
+        <h5>Products</h5>
+        <div class="row" id="productContent"></div>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="/assets/js/custom.js"></script>
+</body>
+</html>
